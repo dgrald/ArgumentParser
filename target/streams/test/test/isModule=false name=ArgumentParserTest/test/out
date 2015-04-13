@@ -2,4 +2,5 @@
 [0m[[0minfo[0m] [0m[32mThe argument parser should[0m[0m
 [0m[[0minfo[0m] [0m[32m- should parse booleans, strings, and integers[0m[0m
 [0m[[0minfo[0m] [0m[32m- should parse doubles and String arrays correctly[0m[0m
-[0m[[0minfo[0m] [0m[32m- should throw an exception when there are not[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw an exception when an argument is passed that is not in the schema[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw an argument exception when an argument is declared more than once[0m[0m

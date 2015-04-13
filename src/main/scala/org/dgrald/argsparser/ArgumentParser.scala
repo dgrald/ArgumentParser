@@ -20,7 +20,14 @@ class ArgumentParser(args: Array[String], argSchema: ArgumentSchema) {
         val argsValue = tail.takeWhile(element => !element.startsWith("-"))
         val restOfArgs = tail.diff(argsValue)
 
-        parseArguments(restOfArgs, argsToReturn :+ parseNextArguments(argName.dropWhile(char => char == '-'), argsValue))
+        val (nextArgType, nextArgValue) = parseNextArguments(argName.dropWhile(char => char == '-'), argsValue)
+
+        if(previouslyParsedArgumentsContainArg(argsToReturn, nextArgType)) {
+          throw new IllegalArgumentException(
+            s"There are two instances of the argument name ${nextArgType.argName} declared in the args '${args.mkString(", ")}'")
+        }
+
+        parseArguments(restOfArgs, argsToReturn :+ (nextArgType, nextArgValue))
       }
     }
 
@@ -38,6 +45,10 @@ class ArgumentParser(args: Array[String], argSchema: ArgumentSchema) {
 
     parseArguments(args.toList, List())
 
+  }
+
+  private def previouslyParsedArgumentsContainArg(previousParsedArguments: List[(ArgumentType, Any)], argumentType: ArgumentType): Boolean = {
+    previousParsedArguments.takeWhile({case (parsedArgumentType, _) => parsedArgumentType.equals(argumentType)}).size > 0
   }
 
   private def parseArgumentValue(argName: String, inputArgValue: List[String]): (ArgumentType, Any) = inputArgValue match {

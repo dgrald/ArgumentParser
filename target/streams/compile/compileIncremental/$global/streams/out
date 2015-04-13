@@ -3,53 +3,13 @@
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
-[0m[[0mdebug[0m] [0mRemoved products: Set(/Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/Args$$anonfun$3.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/Args.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/Args$$anonfun$2.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/ArgumentParser$$anonfun$parseArguments$1$1.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/ArgumentParser$$anonfun$1.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/ArgumentParser.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/Args$$anonfun$4.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/Args$$anonfun$5.class, /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes/org/dgrald/argsparser/Args$$anonfun$1.class)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set(/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala, /Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/ArgumentParser.scala)[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala, /Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/ArgumentParser.scala)[0m
-[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes...[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.6[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.6[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 3326740d, interfacing (CompilerInterface) with Scala compiler version 2.11.6[0m
-[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/classes:/Users/dylangrald/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/Users/dylangrald/Projects/ArgsParser/target/scala-2.11/classes[0m
-[0m[[33mwarn[0m] [0m/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala:48: non-variable type argument String in type pattern List[String] (the underlying of List[String]) is unchecked since it is eliminated by erasure[0m
-[0m[[33mwarn[0m] [0m      case Some((_, argValue: List[String])) => argValue[0m
-[0m[[33mwarn[0m] [0m                              ^[0m
-[0m[[33mwarn[0m] [0m/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala:15: match may not be exhaustive.[0m
-[0m[[33mwarn[0m] [0mIt would fail on the following input: Some(_)[0m
-[0m[[33mwarn[0m] [0m    matchingArgs match {[0m
-[0m[[33mwarn[0m] [0m    ^[0m
-[0m[[33mwarn[0m] [0m/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala:23: match may not be exhaustive.[0m
-[0m[[33mwarn[0m] [0mIt would fail on the following input: Some(_)[0m
-[0m[[33mwarn[0m] [0m    matchingArgs match {[0m
-[0m[[33mwarn[0m] [0m    ^[0m
-[0m[[33mwarn[0m] [0m/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala:31: match may not be exhaustive.[0m
-[0m[[33mwarn[0m] [0mIt would fail on the following input: Some(_)[0m
-[0m[[33mwarn[0m] [0m    matchingArgs match {[0m
-[0m[[33mwarn[0m] [0m    ^[0m
-[0m[[33mwarn[0m] [0m/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala:39: match may not be exhaustive.[0m
-[0m[[33mwarn[0m] [0mIt would fail on the following input: Some(_)[0m
-[0m[[33mwarn[0m] [0m    matchingArgs match {[0m
-[0m[[33mwarn[0m] [0m    ^[0m
-[0m[[33mwarn[0m] [0m/Users/dylangrald/Projects/ArgsParser/src/main/scala/org/dgrald/argsparser/Args.scala:47: match may not be exhaustive.[0m
-[0m[[33mwarn[0m] [0mIt would fail on the following input: Some(_)[0m
-[0m[[33mwarn[0m] [0m    matchingArgs match {[0m
-[0m[[33mwarn[0m] [0m    ^[0m
-[0m[[33mwarn[0m] [0m6 warnings found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 5.960527 s[0m
-[0m[[0mdebug[0m] [0mNew invalidations:[0m
-[0m[[0mdebug[0m] [0m	Set()[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
-[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0mdebug[0m] [0m	Set()[0m
-[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
