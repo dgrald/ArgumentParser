@@ -1,4 +1,0 @@
-[0m[[0minfo[0m] [0m[32mArgumentSchemaTest:[0m[0m
-[0m[[0minfo[0m] [0m[32mThe argument schema[0m[0m
-[0m[[0minfo[0m] [0m[32m- should parse booleans, strings, and integers correctly[0m[0m
-[0m[[0minfo[0m] [0m[32m- should throw an exception with improper schema arguments[0m[0m

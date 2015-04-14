@@ -1,4 +1,0 @@
-[0m[[0minfo[0m] [0m[32mArgumentTypeTest:[0m[0m
-[0m[[0minfo[0m] [0m[32mBoolean type[0m[0m
-[0m[[0minfo[0m] [0m[32m- should not equal integer type[0m[0m
-[0m[[0minfo[0m] [0m[32m- should equal another boolean type with same arg key[0m[0m

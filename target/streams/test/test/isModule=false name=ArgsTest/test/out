@@ -1,7 +1,0 @@
-[0m[[0minfo[0m] [0m[32mArgsTest:[0m[0m
-[0m[[0minfo[0m] [0m[32mThe args[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return the correct string arg[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return the correct integer arg[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return the correct string array arg[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return the correct boolean arg[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return the correct double args[0m[0m
