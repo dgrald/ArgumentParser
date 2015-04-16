@@ -6,8 +6,7 @@ import org.scalatest.{Matchers, FlatSpec}
  */
 class ArgsTest extends FlatSpec with Matchers {
 
-  val argSchema = new ArgumentSchema("s*,d#,k[*],b,d##")
-  val args = new Args(Array("-s", "something", "-d", "23", "-k", "a", "string", "array", "-d", "5.23", "-b"), argSchema)
+  val args = new Args(Array("-s", "something", "-d", "23", "-k", "a", "string", "array", "-d", "5.23", "-b"), "s*,d#,k[*],b,d##")
 
   "The args" should "return the correct string arg" in {
     val sStringValue =  args.getStringArgumentValue("s")
