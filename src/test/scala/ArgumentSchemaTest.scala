@@ -20,4 +20,11 @@ class ArgumentSchemaTest extends FlatSpec with Matchers {
     } should have message "Couldn't find an argument type match for r%."
   }
 
+  it should "throw an exception when two arguments of the same name are specified" in {
+    the[IllegalArgumentException] thrownBy {
+      val schema = new ArgumentSchema("a*,a*,r[*]")
+      schema.argumentSchema
+    } should have message s"There are two org.dgrald.argsparser.StringArgument values with flag 'a' in the schema."
+  }
+
 }

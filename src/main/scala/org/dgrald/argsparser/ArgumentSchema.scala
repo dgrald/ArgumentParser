@@ -12,7 +12,13 @@ class ArgumentSchema(schema: String) {
     @tailrec
     def possibleArgs(schemaList: List[String], outgoingList: List[ArgumentType]): List[ArgumentType] = schemaList match {
       case List() => outgoingList
-      case nextArg +: tail => possibleArgs(tail, outgoingList :+ parseArg(nextArg))
+      case nextArg +: tail => {
+        val nextParsedArgument = parseArg(nextArg)
+        if(outgoingList.contains(nextParsedArgument)) {
+          throw new IllegalArgumentException(s"There are two ${nextParsedArgument.getClass.getName} values with flag '${nextParsedArgument.argName}' in the schema.")
+        }
+        possibleArgs(tail, outgoingList :+ parseArg(nextArg))
+      }
     }
 
     def parseArg(arg: String): ArgumentType = arg.toCharArray match {

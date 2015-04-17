@@ -55,12 +55,11 @@ class ArgumentParser(args: Array[String], argSchema: ArgumentSchema) {
     case List(firstArgument) => {
       parseSingleArgumentValue(firstArgument, argName)
     }
-    case _ => {
-      if(isValidStringArrayArgument(argName)) {
+    case _ =>
+      if (isValidStringArrayArgument(argName)) {
         return (new StringArrayArgument(argName), inputArgValue)
       }
       throw new IllegalArgumentException(s"The argument ${argName} with value ${inputArgValue.mkString(", ")} was not part of the schema ${argSchema}")
-    }
   }
 
   private def parseSingleArgumentValue(argValue: String, argName: String): (ArgumentType, Any) = {
@@ -75,12 +74,12 @@ class ArgumentParser(args: Array[String], argSchema: ArgumentSchema) {
 
   }
 
-  private def isValidDoubleArgument(argName: String, element: String): Boolean = {
-    element.matches("[0-9]+.[0-9]+") && argSchema.isValidArgument(new DoubleArgument(argName))
+  private def isValidDoubleArgument(argName: String, argValue: String): Boolean = {
+    argValue.matches("[0-9]+.[0-9]+") && argSchema.isValidArgument(new DoubleArgument(argName))
   }
 
-  private def isValidIntegerArgument(argName: String, element: String): Boolean = {
-    element.matches("[0-9]+") && argSchema.isValidArgument(new IntegerArgument(argName))
+  private def isValidIntegerArgument(argName: String, argValue: String): Boolean = {
+    argValue.matches("[0-9]+") && argSchema.isValidArgument(new IntegerArgument(argName))
   }
 
   private def isValidStringArgument(argName: String): Boolean = {
